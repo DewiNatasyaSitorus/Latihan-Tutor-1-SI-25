@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="dewi"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-01 09.04.45 PM"/>
+        <attribute name="saved" value="2025-10-01 09.12.57 PM"/>
         <attribute name="created" value="ZGV3aTtNU0k7MjAyNS0xMC0wMTswOC4zMC40NiBQTTsxOTEw"/>
-        <attribute name="edited" value="ZGV3aTtNU0k7MjAyNS0xMC0wMTswOS4wNC40NSBQTTszOzIwMjE="/>
+        <attribute name="edited" value="ZGV3aTtNU0k7MjAyNS0xMC0wMTswOS4xMi41NyBQTTs0OzIwMjQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,18 +16,18 @@
             <input variable="i2"/>
             <if expression="i1%2=0">
                 <then>
-                    <output expression="&quot;Bilangan pertama : Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama :&quot;&amp;&quot;Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama : Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama :&quot;&amp;&quot;Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="i2%2=0">
                 <then>
-                    <output expression="&quot;Bilangan kedua : Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua :&quot;&amp;&quot;Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan kedua : Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua :&quot;&amp;&quot;Genap&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="i1&gt;i2">
