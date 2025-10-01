@@ -4,43 +4,43 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="dewi"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-01 08.50.28 PM"/>
+        <attribute name="saved" value="2025-10-01 09.04.45 PM"/>
         <attribute name="created" value="ZGV3aTtNU0k7MjAyNS0xMC0wMTswOC4zMC40NiBQTTsxOTEw"/>
-        <attribute name="edited" value="ZGV3aTtNU0k7MjAyNS0xMC0wMTswOC41MC4yOCBQTTsxOzIwMjA="/>
+        <attribute name="edited" value="ZGV3aTtNU0k7MjAyNS0xMC0wMTswOS4wNC40NSBQTTszOzIwMjE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="i1, i2, j, k" type="Integer" array="False" size=""/>
             <input variable="i1"/>
+            <input variable="i2"/>
             <if expression="i1%2=0">
                 <then>
-                    <output expression="&quot;genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama : Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama : Ganjil&quot;" newline="True"/>
                 </else>
             </if>
-            <input variable="i2"/>
             <if expression="i2%2=0">
                 <then>
-                    <output expression="&quot;genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua : Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua : Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="i1&gt;i2">
                 <then>
-                    <output expression="i1 &amp; &quot; terbesar&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
                 </then>
                 <else>
                     <if expression="i2&gt;i1">
                         <then>
-                            <output expression="i2 &amp; &quot; terbesar&quot;" newline="True"/>
+                            <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;bilangan sama besar&quot;" newline="True"/>
+                            <output expression="&quot;Bilangan sama besar&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
@@ -48,16 +48,16 @@
             <if expression="i1%2=0 &amp;&amp; i2%2=0">
                 <then>
                     <assign variable="j" expression="i1+i2"/>
-                    <output expression="&quot;hasil penjumlahan &quot; &amp; j" newline="True"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; j" newline="True"/>
                 </then>
                 <else>
                     <if expression="i1%2=1 &amp;&amp; i2%2=1">
                         <then>
                             <assign variable="k" expression="i1*i2"/>
-                            <output expression="&quot;hasil perkalian &quot; &amp; k" newline="True"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; k" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
