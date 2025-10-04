@@ -9,12 +9,12 @@ public class T00 {
 
         i1 = Integer.parseInt(input.nextLine());
         i2 = Integer.parseInt(input.nextLine());
-        if (i1 % 2 == 0) {
+        if (i1mod2 == 0) {
             System.out.println("Bilangan pertama: Genap");
         } else {
             System.out.println("Bilangan pertama: Ganjil");
         }
-        if (i2 % 2 == 0) {
+        if (i2mod2 == 0) {
             System.out.println("Bilangan kedua: Genap");
         } else {
             System.out.println("Bilangan pertama: Ganjil");
@@ -25,7 +25,7 @@ public class T00 {
             if (i1 < i2) {
                 System.out.println("Bilangan kedua lebih besar");
             } else {
-                System.out.println("Bilangan sama besar");
+                System.out.println("Kedua bilangan sama besar");
             }
         }
         if (i1 % 2 == 0 && i2 % 2 == 0) {
