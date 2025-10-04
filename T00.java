@@ -17,12 +17,12 @@ public class T00 {
         if (i2 % 2 == 0) {
             System.out.println("Bilangan kedua: Genap");
         } else {
-            System.out.println("Bilangan kedua: Genap");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (i1 > i2) {
             System.out.println("Bilangan pertama lebih besar");
         } else {
-            if (i2 > i1) {
+            if (i1 < i2) {
                 System.out.println("Bilangan kedua lebih besar");
             } else {
                 System.out.println("Bilangan sama besar");
@@ -32,7 +32,7 @@ public class T00 {
             j = i1 + i2;
             System.out.println("Hasil penjumlahan: " + j);
         } else {
-            if (i1 % 2 == 1 && i2 % 2 == 1) {
+            if (i1 % 2 != 0 && i2 % 2 != 0) {
                 k = i1 * i2;
                 System.out.println("Hasil perkalian: " + k);
             } else {
