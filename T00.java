@@ -1,46 +1,46 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class T00{
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int bil1, bil2, perkalian, penjumlahan;
+        int i1, i2, hk, hj;
 
-        bil1 = Integer.parseInt(input.nextLine());
-        bil2 = Integer.parseInt(input.nextLine());
-        if (bil1 % 2 == 0) {
+        i1 = Integer.parseInt(input.nextLine());
+        i2 = Integer.parseInt(input.nextLine());
+        if (i1 % 2 == 0) {
             System.out.println("Bilangan pertama: Genap");
         } else {
             System.out.println("Bilangan pertama: Ganjil");
         }
-        if (bil2 % 2 == 0) {
+        if (i2 % 2 == 0) {
             System.out.println("Bilangan kedua: Genap");
         } else {
             System.out.println("Bilangan kedua: Ganjil");
         }
-        if (bil1 > bil2) {
+        if (i1 > i2) {
             System.out.println("Bilangan pertama lebih besar");
         } else {
-            if (bil1 < bil2) {
+            if (i1 < i2) {
                 System.out.println("Bilangan kedua lebih besar");
             } else {
                 System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (bil1 % 2 == 0 && bil2 % 2 == 0) {
-            penjumlahan = bil1 + bil2;
-            System.out.println("Hasil penjumlahan: " + penjumlahan);
+        if (i1 % 2 == 0 && i2 % 2 == 0) {
+            hj = i1 + i2;
+            System.out.println("Hasil penjumlahan: " + hj);
         } else {
-            if (bil1 % 2 != 0 && bil2 % 2 != 0) {
-                perkalian = bil1 * bil2;
-                System.out.println("Hasil perkalian: " + perkalian);
+            if (i1 % 2 != 0 && i2 % 2 != 0) {
+                hk = i1 * i2;
+                System.out.println("Hasil perkalian: " + hk);
             }
         }
-        if (bil1 % 2 != 0 && bil2 % 2 == 0) {
+        if (i1 % 2 != 0 && i2 % 2 == 0) {
             System.out.println("Berbeda jenis");
         } else {
-            if (bil2 % 2 != 0 && bil1 % 2 == 0) {
+            if (i2 % 2 != 0 && i1 % 2 == 0) {
                 System.out.println("Berbeda jenis");
             }
         }
