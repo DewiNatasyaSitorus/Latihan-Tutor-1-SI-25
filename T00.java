@@ -5,37 +5,42 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int i1, i2, j, k;
+        int bil1, bil2, perkalian, penjumlahan;
 
-        i1 = Integer.parseInt(input.nextLine());
-        i2 = Integer.parseInt(input.nextLine());
-        if (i1mod2 == 0) {
+        bil1 = Integer.parseInt(input.nextLine());
+        bil2 = Integer.parseInt(input.nextLine());
+        if (bil1 % 2 == 0) {
             System.out.println("Bilangan pertama: Genap");
         } else {
             System.out.println("Bilangan pertama: Ganjil");
         }
-        if (i2mod2 == 0) {
+        if (bil2 % 2 == 0) {
             System.out.println("Bilangan kedua: Genap");
         } else {
-            System.out.println("Bilangan pertama: Ganjil");
+            System.out.println("Bilangan kedua: Ganjil");
         }
-        if (i1 > i2) {
+        if (bil1 > bil2) {
             System.out.println("Bilangan pertama lebih besar");
         } else {
-            if (i1 < i2) {
+            if (bil1 < bil2) {
                 System.out.println("Bilangan kedua lebih besar");
             } else {
                 System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (i1 % 2 == 0 && i2 % 2 == 0) {
-            j = i1 + i2;
-            System.out.println("Hasil penjumlahan: " + j);
+        if (bil1 % 2 == 0 && bil2 % 2 == 0) {
+            penjumlahan = bil1 + bil2;
+            System.out.println("Hasil penjumlahan: " + penjumlahan);
         } else {
-            if (i1 % 2 != 0 && i2 % 2 != 0) {
-                k = i1 * i2;
-                System.out.println("Hasil perkalian: " + k);
-            } else {
+            if (bil1 % 2 != 0 && bil2 % 2 != 0) {
+                perkalian = bil1 * bil2;
+                System.out.println("Hasil perkalian: " + perkalian);
+            }
+        }
+        if (bil1 % 2 != 0 && bil2 % 2 == 0) {
+            System.out.println("Berbeda jenis");
+        } else {
+            if (bil2 % 2 != 0 && bil1 % 2 == 0) {
                 System.out.println("Berbeda jenis");
             }
         }
