@@ -2,63 +2,74 @@
 <flowgorithm fileversion="4.2">
     <attributes>
         <attribute name="name" value="T00"/>
-        <attribute name="authors" value="dewi"/>
+        <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-01 09.33.44 PM"/>
-        <attribute name="created" value="ZGV3aTtNU0k7MjAyNS0xMC0wMTswOC4zMC40NiBQTTsxOTEw"/>
-        <attribute name="edited" value="ZGV3aTtNU0k7MjAyNS0xMC0wMTswOS4zMy40NCBQTTs1OzIwMjQ="/>
+        <attribute name="saved" value="2025-10-03 05:19:33 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMTswODoyMTo0OSBQTTsyNjQ5"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMzswNToxOTozMyBQTTs1OzI3NjA="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="i1, i2, j, k" type="Integer" array="False" size=""/>
-            <input variable="i1"/>
-            <input variable="i2"/>
-            <if expression="i1%2=0">
+            <declare name="b1, b2, hpk, hp" type="Integer" array="False" size=""/>
+            <input variable="b1"/>
+            <input variable="b2"/>
+            <if expression="b1 mod 2 == 0">
                 <then>
-                    <output expression="&quot;Bilangan pertama:&quot;&amp;&quot;Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama:&quot;&amp;&quot;Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="i2%2=0">
+            <if expression="b2 mod 2 == 0">
                 <then>
-                    <output expression="&quot;Bilangan kedua:&quot;&amp;&quot;Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan kedua:&quot;&amp;&quot;Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="i1&gt;i2">
+            <if expression="b1&gt;b2">
                 <then>
                     <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
                 </then>
                 <else>
-                    <if expression="i2&gt;i1">
+                    <if expression="b1&lt;b2">
                         <then>
                             <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;Bilangan sama besar&quot;" newline="True"/>
+                            <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
             </if>
-            <if expression="i1%2=0 &amp;&amp; i2%2=0">
+            <if expression="b1 mod 2 == 0 &amp;&amp; b2 mod 2 == 0">
                 <then>
-                    <assign variable="j" expression="i1+i2"/>
-                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; j" newline="True"/>
+                    <assign variable="hp" expression="b1+b2"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot;&amp;hp" newline="True"/>
                 </then>
                 <else>
-                    <if expression="i1%2=1 &amp;&amp; i2%2=1">
+                    <if expression="b1 mod 2 != 0 &amp;&amp; b2 mod 2 != 0">
                         <then>
-                            <assign variable="k" expression="i1*i2"/>
-                            <output expression="&quot;Hasil perkalian: &quot; &amp; k" newline="True"/>
+                            <assign variable="hpk" expression="b1*b2"/>
+                            <output expression="&quot;Hasil perkalian: &quot;&amp;hpk" newline="True"/>
                         </then>
-                        <else>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <if expression="b1 mod 2!=0 &amp;&amp; b2 mod 2==0">
+                <then>
+                    <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b2 mod 2!=0 &amp;&amp; b1 mod 2==0">
+                        <then>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
-                        </else>
+                        </then>
+                        <else/>
                     </if>
                 </else>
             </if>
